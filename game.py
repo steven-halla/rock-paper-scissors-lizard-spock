@@ -1,7 +1,7 @@
-# from computer import Computer
-# from gestures import WINNING_GESTURES
-# from human import Human
-# from player import Player
+from computer import Computer
+from gestures import WINNING_GESTURES
+from human import Human
+from player import Player
 
 
 class Game:
