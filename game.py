@@ -15,6 +15,7 @@ class Game:
         self.set_player_2()
         self.display_rules()
         self.play()
+        self.play_again()
 
     # the only real difference between player 2 being human vs computer is HOW they select_gesture, but otherwise they are
     # handled exactly the same, so no need for different game logic based on # of players.
@@ -65,6 +66,21 @@ class Game:
                 print("player 2 won")
                 p2_score += 1
                 round += 1
+
+    def play_again(self):
+        print("would you like to play again")
+
+        please_continue = input("Please select Single Player[1] or Multi-Player[2] Please Type: '1' or '2'.")
+        if please_continue == "1":
+            self.play()
+        elif please_continue == "2":
+            print("ending game")
+        else:
+            self.play_again()
+
+
+
+
 
     # example, if player 1 puts in ROCK, player 2 puts in SPOCK
     # first check player 1 win
