@@ -1,0 +1,9 @@
+# i.e. ROCK wins against SCISSORS
+# and SPOCK wins against SCISSORS or LIZARD
+WINNING_GESTURES = {
+    ROCK: [SCISSORS, LIZARD],
+    SCISSORS: [PAPER, LIZARD],
+    PAPER: [ROCK, SPOCK],
+    SPOCK: [SCISSORS, ROCK],
+    LIZARD: [SPOCK, PAPER]
+}
