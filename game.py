@@ -9,7 +9,7 @@ class Game:
     def __init__(self):
         self.player = Player()
         self.player_1 = Human()
-        self.player_2 = Computer()  # default to computer, user will have option to select p1 vs p2 mode later
+        self.player_2 = Computer()
 
     def start(self):
         self.set_player_2()
@@ -17,8 +17,7 @@ class Game:
         self.play()
         self.play_again()
 
-    # the only real difference between player 2 being human vs computer is HOW they select_gesture, but otherwise they are
-    # handled exactly the same, so no need for different game logic based on # of players.
+
     def set_player_2(self):
         players = input("Please select Single Player[1] or Multi-Player[2] Please Type: '1' or '2'.")
         if players == "1":
@@ -79,16 +78,6 @@ class Game:
             self.play_again()
 
 
-
-
-
-    # example, if player 1 puts in ROCK, player 2 puts in SPOCK
-    # first check player 1 win
-    # winning_gestures[p1Input] will return [SCISSORS]
-    # if player 2's input is in above list, [SCISSORS], that means they win.
-    # so, in this case, player 2 input SPOCK, however, SPOCK is not in the
-    #   list of gestures that ROCK wins against (i.e. it's not SCISSORS),
-    # thus p1 doesn't win against p2, so we then see if p2's input beats p1s
     def evaluate_round(self, p1_input, p2_input):
         # check if p1 wins
         if p2_input in WINNING_GESTURES[p1_input]:
@@ -100,5 +89,4 @@ class Game:
         return 0
 
     def display_winnner(self):
-        # display the winner and ask if the users want to play again.
         pass
