@@ -69,7 +69,7 @@ class Game:
     def play_again(self):
         print("would you like to play again")
 
-        please_continue = input("Please select Single Player[1] or Multi-Player[2] Please Type: '1' or '2'.")
+        please_continue = input("press 1 for yes 2 for no.")
         if please_continue == "1":
             self.play()
         elif please_continue == "2":
