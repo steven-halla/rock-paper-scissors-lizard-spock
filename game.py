@@ -28,13 +28,11 @@ class Game:
     def display_rules(self):
         print("Welcome to Rock, Paper, Scissors, Lizard, Spock.")
         print("The rules of the game are:")
-        print("Rock crushes Scissors")
-        print("Scissors cut Paper")
-        print("Paper covers Rock")
-        print("Rock crushes Lizard")
-        print("Lizard poisons Spock")
-        print("Spock smashes Scissors")
-        print("Scissors decapitate Lizard")
+        print("scissors beats paper and lizard")
+        print("paper beats rock and spock")
+        print("liazard beats spock and paper")
+        print("spock beats rock and scissors")
+        print("rock beats scissors and lizard")
 
     def play(self):
         p1_score = 0
