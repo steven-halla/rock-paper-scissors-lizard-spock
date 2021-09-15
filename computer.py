@@ -2,7 +2,6 @@ from gestures import GESTURES
 from player import Player
 import random
 
-
 class Computer(Player):
 
     def __init__(self):

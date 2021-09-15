@@ -3,7 +3,6 @@ from gestures import WINNING_GESTURES
 from human import Human
 from player import Player
 
-
 class Game:
 
     def __init__(self):
@@ -17,7 +16,6 @@ class Game:
         self.play()
         self.play_again()
 
-
     def set_player_2(self):
         players = input("Please select Single Player[1] or Multi-Player[2] Please Type: '1' or '2'.")
         if players == "1":
@@ -26,7 +24,6 @@ class Game:
             self.player_2 = Human()
         else:
             return self.set_player_2()
-
 
     def display_rules(self):
         print("Welcome to Rock, Paper, Scissors, Lizard, Spock.")
